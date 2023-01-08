@@ -8,8 +8,8 @@ public class BanknotesAndCoins {
         double entryValue = input.nextDouble();
         input.close();
 
-        int notes = (int) entryValue;
-        int moedas = (int) ((entryValue - notes) * 100);
+        int notes = (int) entryValue; //pega o valor inteiro inserido
+        int moedas = (int) ((entryValue - notes) * 100); // converter os centavos em inteiro para dividir
 
         int notes100 = notes / 100;
         notes -= notes100 * 100;
