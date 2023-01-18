@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GameTime {
     public static void main(String[] args) {
         int day = 24;
-        int result = 0;
+        int result;
 
         Scanner input = new Scanner(System.in);
         int hInit = input.nextInt();
