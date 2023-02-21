@@ -2,7 +2,7 @@ import java.text.DecimalFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class DividingXbyY {
+    public class DividingXbyY {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         DecimalFormat df = new DecimalFormat("0.0");
