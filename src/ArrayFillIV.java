@@ -5,15 +5,17 @@ public class ArrayFillIV {
         Scanner input = new Scanner(System.in);
         int[] par = new int[5];
         int[] odd = new int[5];
-        int X, countPar = 0, countOdd = 0;
-        for (int i = 0; i < 15; i++) {
-            X = input.nextInt();
 
-            if (X % 2 == 0) {
-                par[countPar] = X;
+        int entrynumber, countPar = 0, countOdd = 0;
+
+        for (int i = 0; i < 15; i++) {
+            entrynumber = input.nextInt();
+
+            if (entrynumber % 2 == 0) {
+                par[countPar] = entrynumber;
                 countPar++;
             } else {
-                odd[countOdd] = X;
+                odd[countOdd] = entrynumber;
                 countOdd++;
             }
 
@@ -25,13 +27,13 @@ public class ArrayFillIV {
             } else if (countOdd == 5) {
                 countOdd = 0;
                 for (int j = 0; j < odd.length; j++) {
-                    System.out.println("odd[" + j + "] = " + odd[j]);
+                    System.out.println("impar[" + j + "] = " + odd[j]);
                 }
             }
         }
 
         for (int i = 0; i < countOdd; i++) {
-            System.out.println("odd[" + i + "] = " + odd[i]);
+            System.out.println("impar[" + i + "] = " + odd[i]);
         }
         for (int i = 0; i < countPar; i++) {
             System.out.println("par[" + i + "] = " + par[i]);
